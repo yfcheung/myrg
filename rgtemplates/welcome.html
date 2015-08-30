@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{%trans "Welcome to Robogals!" %}{% endblock %}
+
+{% block pagetitle %}{% trans "Welcome to Robogals!" %}{% endblock %}
+
+{% block content %}
+{% autoescape off %}
+{{welcome_page}}
+{% endautoescape %}
+{% endblock %}
